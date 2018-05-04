@@ -16,20 +16,29 @@ namespace portefolio
     {
         public static void Main(string[] args)
         {
+            BuildWebHost(args).Run();
+        }
+
+        public static IWebHost BuildWebHost(string[] args)
+        {
+            var envName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+            System.Console.WriteLine(envName);
+            
             var configuration = new ConfigurationBuilder()
-                .AddJsonFile("hosting.json", optional: true)
+                .AddJsonFile("hosting.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"hosting.{envName}.json", optional: true, reloadOnChange: true)
                 .AddCommandLine(args)
                 .Build();
 
-            BuildWebHost(args, configuration).Run();
-        }
-
-        public static IWebHost BuildWebHost(string[] args, IConfiguration configuration) =>
-            WebHost.CreateDefaultBuilder(args)
+            return WebHost.CreateDefaultBuilder(args)
+//                .PreferHostingUrls(false)
                 .UseConfiguration(configuration)
-                .UseKestrel()
+                .UseKestrel((options) => { })
+                .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
 //                .UseUrls(urls: "http://localhost:8000")
                 .Build();
+        }
     }
 }
