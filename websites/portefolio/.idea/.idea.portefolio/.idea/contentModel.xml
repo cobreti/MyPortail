@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="portefolio" t="IncludeRecursive">
+        <e p=".editorconfig" t="Include" />
+        <e p=".gitignore" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="bundleconfig.json" t="Include" />
+        <e p="hosting.development.json" t="Include" />
+        <e p="hosting.json" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="portefolio.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="portefolio.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="webapp" t="Include">
+          <e p="portefolio" t="Include">
+            <e p=".editorconfig" t="Include" />
+            <e p=".gitignore" t="Include" />
+            <e p="angular.json" t="Include" />
+            <e p="e2e" t="Include">
+              <e p="protractor.conf.js" t="Include" />
+              <e p="src" t="Include">
+                <e p="app.e2e-spec.ts" t="Include" />
+                <e p="app.po.ts" t="Include" />
+              </e>
+              <e p="tsconfig.e2e.json" t="Include" />
+            </e>
+            <e p="package-lock.json" t="Include" />
+            <e p="package.json" t="Include" />
+            <e p="README.md" t="Include" />
+            <e p="src" t="Include">
+              <e p="app" t="Include">
+                <e p="app.component.css" t="Include" />
+                <e p="app.component.html" t="Include" />
+                <e p="app.component.spec.ts" t="Include" />
+                <e p="app.component.ts" t="Include" />
+                <e p="app.module.ts" t="Include" />
+              </e>
+              <e p="assets" t="Include">
+                <e p=".gitkeep" t="Include" />
+              </e>
+              <e p="browserslist" t="Include" />
+              <e p="environments" t="Include">
+                <e p="environment.prod.ts" t="Include" />
+                <e p="environment.ts" t="Include" />
+              </e>
+              <e p="favicon.ico" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="karma.conf.js" t="Include" />
+              <e p="main.ts" t="Include" />
+              <e p="polyfills.ts" t="Include" />
+              <e p="styles.css" t="Include" />
+              <e p="test.ts" t="Include" />
+              <e p="tsconfig.app.json" t="Include" />
+              <e p="tsconfig.spec.json" t="Include" />
+              <e p="tslint.json" t="Include" />
+            </e>
+            <e p="tsconfig.json" t="Include" />
+            <e p="tslint.json" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+            <e p="site.min.css" t="Include" />
+          </e>
+          <e p="dist" t="Include">
+            <e p="portefolio" t="Include">
+              <e p="3rdpartylicenses.txt" t="Include" />
+              <e p="favicon.ico" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="main.js.map" t="Include" />
+              <e p="polyfills.js" t="Include" />
+              <e p="polyfills.js.map" t="Include" />
+              <e p="runtime.js" t="Include" />
+              <e p="runtime.js.map" t="Include" />
+              <e p="styles.js" t="Include" />
+              <e p="styles.js.map" t="Include" />
+              <e p="vendor.js" t="Include" />
+              <e p="vendor.js.map" t="Include" />
+            </e>
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="banner1.svg" t="Include" />
+            <e p="banner2.svg" t="Include" />
+            <e p="banner3.svg" t="Include" />
+            <e p="banner4.svg" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+            <e p="site.min.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-theme.css" t="Include" />
+                  <e p="bootstrap-theme.css.map" t="Include" />
+                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="glyphicons-halflings-regular.eot" t="Include" />
+                  <e p="glyphicons-halflings-regular.svg" t="Include" />
+                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="npm.js" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="portefolio.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_portefolio.-1188170715.00" t="ExcludeRecursive" />
+  </component>
+</project>

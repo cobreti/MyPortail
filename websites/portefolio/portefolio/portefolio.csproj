@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\About.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Contact.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Error.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\3rdpartylicenses.txt" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\favicon.ico" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\index.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\main.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\polyfills.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\polyfills.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\runtime.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\runtime.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\styles.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\styles.js.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\vendor.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\dist\portefolio\vendor.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="hosting.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="hosting.development.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
