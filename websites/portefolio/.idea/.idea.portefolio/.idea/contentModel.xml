@@ -35,13 +35,12 @@
               </e>
               <e p="tsconfig.e2e.json" t="Include" />
             </e>
-            <e p="package-lock.json" t="Include" />
             <e p="package.json" t="Include" />
             <e p="README.md" t="Include" />
             <e p="src" t="Include">
               <e p="app" t="Include">
-                <e p="app.component.css" t="Include" />
                 <e p="app.component.html" t="Include" />
+                <e p="app.component.scss" t="Include" />
                 <e p="app.component.spec.ts" t="Include" />
                 <e p="app.component.ts" t="Include" />
                 <e p="app.module.ts" t="Include" />

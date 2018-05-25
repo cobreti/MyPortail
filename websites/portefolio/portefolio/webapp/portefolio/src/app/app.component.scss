@@ -1,0 +1,10 @@
+.base {
+  border: 1px solid red;
+  padding: 1em;
+}
+
+.test {
+  @extend .base;
+
+  color: #985f0d;
+}

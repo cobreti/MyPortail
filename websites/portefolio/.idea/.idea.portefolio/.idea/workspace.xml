@@ -2,49 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d2ee59-34e0-400e-a049-226b1d4e7fde" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio.sln" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/app.browser.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/app.server.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/app.shared.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/counter/counter.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/counter/counter.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/counter/counter.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/fetchdata/fetchdata.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/fetchdata/fetchdata.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/navmenu/navmenu.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/navmenu/navmenu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/app/components/navmenu/navmenu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/boot.browser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/boot.server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/test/boot-tests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/ClientApp/test/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Controllers/HomeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Controllers/SampleDataController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Views/Home/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Views/Shared/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Views/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/hosting.json" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/hosting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/npm-shrinkwrap.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/portefolio.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/portefolio.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portefolio/webpack.config.vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.portefolio/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.portefolio/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.portefolio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.portefolio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portefolio/webapp/portefolio/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portefolio/webapp/portefolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/webapp/portefolio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,13 +22,31 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="17">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hosting.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bundleconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/bundleconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appsettings.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/appsettings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hosting.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portefolio/hosting.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -73,7 +55,79 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hosting.development.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/hosting.development.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <folding>
+                <marker date="1525817698788" expanded="false" signature="6:255" ph="..." />
+                <marker date="1525817698788" expanded="true" signature="277:1234" ph="{...}" />
+                <marker date="1525817698788" expanded="true" signature="304:1232" ph="{...}" />
+                <marker date="1525817698788" expanded="true" signature="357:415" ph="{...}" />
+                <marker date="1525817698788" expanded="true" signature="473:1226" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/angular.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!block;n#extract-i18n#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+                <element signature="n#!!block;n#test#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+                <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>styleExt</find>
+      <find>node-sas</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -86,10 +140,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/portefolio/Startup.cs" />
-        <option value="$PROJECT_DIR$/portefolio/webapp/portefolio/angular.json" />
         <option value="$PROJECT_DIR$/portefolio/Program.cs" />
         <option value="$PROJECT_DIR$/docker/Dockerfile" />
         <option value="$PROJECT_DIR$/portefolio/hosting.json" />
+        <option value="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/portefolio/webapp/portefolio/angular.json" />
+        <option value="$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/portefolio/webapp/portefolio/package.json" />
       </list>
     </option>
   </component>
@@ -100,7 +158,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="97" />
+    <option name="x" value="96" />
     <option name="y" value="48" />
     <option name="width" value="1548" />
     <option name="height" value="963" />
@@ -111,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -127,6 +184,19 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="portefolio (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="portefolio" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="webapp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="portefolio (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="portefolio" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="webapp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="portefolio" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="portefolio (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="docker" type="6f407253:SolutionExplorerNodeFileSystem" />
             </path>
           </expand>
@@ -134,12 +204,15 @@
         </subPane>
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -188,11 +261,13 @@
       <workItem from="1525655452114" duration="1921000" />
       <workItem from="1525817107531" duration="656000" />
       <workItem from="1525817801965" duration="1269000" />
+      <workItem from="1525909073773" duration="1167000" />
+      <workItem from="1527209077522" duration="728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4191000" />
+    <option name="totallyTimeSpent" value="6086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,17 +287,18 @@
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="REST Client" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32977462" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32977462" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25564408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2622842" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32983193" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -245,6 +321,81 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/hosting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <marker date="1525817698788" expanded="false" signature="6:255" ph="..." />
+            <marker date="1525817698788" expanded="true" signature="277:1234" ph="{...}" />
+            <marker date="1525817698788" expanded="true" signature="304:1232" ph="{...}" />
+            <marker date="1525817698788" expanded="true" signature="357:415" ph="{...}" />
+            <marker date="1525817698788" expanded="true" signature="473:1226" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!block;n#extract-i18n#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#test#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/hosting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/portefolio/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -263,16 +414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <marker date="1525657515472" expanded="false" signature="6:350" ph="..." />
-            <marker date="1525657515472" expanded="true" signature="372:1318" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="399:1316" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="458:521" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="744:795" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="983:1310" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="1030:1107" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="1124:1203" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -301,16 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <marker date="1525657515472" expanded="false" signature="6:350" ph="..." />
-            <marker date="1525657515472" expanded="true" signature="372:1318" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="399:1316" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="458:521" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="744:795" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="983:1310" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="1030:1107" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="1124:1203" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -327,53 +458,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portefolio/bundleconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portefolio/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <marker date="1525657515472" expanded="false" signature="6:350" ph="..." />
-            <marker date="1525657515472" expanded="true" signature="372:1318" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="399:1316" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="458:521" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="744:795" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="983:1310" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="1030:1107" ph="{...}" />
-            <marker date="1525657515472" expanded="true" signature="1124:1203" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/angular.json">
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!block;n#extract-i18n#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
-            <element signature="n#!!block;n#test#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
-            <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portefolio/hosting.development.json">
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portefolio/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
             <marker date="1525817698788" expanded="false" signature="6:255" ph="..." />
             <marker date="1525817698788" expanded="true" signature="277:1234" ph="{...}" />
@@ -384,10 +493,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!block;n#extract-i18n#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#test#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#portefolio#0;n#!!block;n#projects#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/hosting.development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/bundleconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -395,6 +544,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portefolio/webapp/portefolio/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
