@@ -7,9 +7,11 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_DATABASE=auth
-      - MYSQL_USER=my_user
-      - MYSQL_PASSWORD=password123
-      - MYSQL_ROOT_PASSWORD=password123
+      - MYSQL_USER=authUser
+      - MYSQL_PASSWORD=igQFUwjZZyxgken7gcKg*gTu
+      - MYSQL_ROOT_PASSWORD=igQFUwjZZyxgken7gcKg*gTu
       - MYSQL_ROOT_HOST=*.*.*.*
-
-  
+    volumes:
+      - auth-data:/var/lib/mysql
+volumes:
+  auth-data:
