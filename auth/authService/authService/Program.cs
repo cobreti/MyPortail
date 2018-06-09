@@ -27,6 +27,9 @@ namespace authService
               .AddCommandLine(args)
               .Build();
 
+            //var appConfig = new Settings.Application();
+            //configuration.GetSection("App").Bind(appConfig);
+
             return WebHost.CreateDefaultBuilder(args)
                 .UseConfiguration(configuration)
                 .UseStartup<Startup>()

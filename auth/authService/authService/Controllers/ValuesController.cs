@@ -9,6 +9,12 @@ namespace authService.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        Contexts.AuthDbContext _context { get; }
+
+        public ValuesController(Contexts.AuthDbContext context) {
+            _context = context;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -20,6 +26,17 @@ namespace authService.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            try
+            {
+                using (var ctx = _context)
+                {
+                    ctx.Database.EnsureCreated();
+                }
+            }
+            catch(Exception ex) {
+                System.Console.Error.WriteLine(ex);
+            }
+
             return "value";
         }
 
