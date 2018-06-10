@@ -1,37 +1,55 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace authService.Services
 {
     public class AuthService : IAuthService
     {
-        private Contexts.AuthDbContext AuthContext { get; }
+        private Contexts.UsersDbContext UsersContext { get; }
+        private Settings.Application AppSettings { get; }
+        private Services.IPasswordHasher PasswordHasher { get; }
 
-        public AuthService(Contexts.AuthDbContext authContext)
+        public AuthService(
+            Contexts.UsersDbContext usersContext,
+            Settings.Application appSettings,
+            Services.IPasswordHasher passwordHasher )
         {
-            AuthContext = authContext;
+            UsersContext = usersContext;
+            AppSettings = appSettings;
+            PasswordHasher = passwordHasher;
         }
 
         public JwtSecurityToken CreateToken(Model.Api.LoginCredentials credentials)
         {
             try
             {
-                var securityKey = "kFAAT3.bFnMhvHYtCcEcyQZspBqNHQmKWEMt";
+                var users = UsersContext.Users.Where(x => x.Name.Equals(credentials.Username));
 
+                if (!users.Any())
+                    throw new Exception("unkown user");
+
+                var hashedPwd = PasswordHasher.HashPassword(credentials.Password);
+                var user = users.First();
+                if (!user.Password.Equals(hashedPwd))
+                    throw new Exception("invalid credentials");
+                
                 var claims = new[]
                 {
                     new Claim(ClaimTypes.Name, credentials.Username)
                 };
 
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppSettings.TokenGeneration.SecurityKey));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var token = new JwtSecurityToken(
-                    issuer: "yourdomain.com",
-                    audience: "yourdomain.com",
+                    issuer: AppSettings.TokenGeneration.Issuer,
+                    audience: AppSettings.TokenGeneration.Audience,
                     claims: claims,
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: creds);

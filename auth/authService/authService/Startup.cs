@@ -31,14 +31,14 @@ namespace authService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<Contexts.AuthDbContext>();
+            services.AddDbContext<Contexts.UsersDbContext>();
             services.AddScoped<Services.IUsersService, Services.UsersService>();
             services.AddScoped<Services.IAuthService, Services.AuthService>();
+            services.AddScoped<Services.IPasswordHasher, Services.PasswordHasher>();
+            services.AddSingleton<Settings.Application>(AppSettings);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
-                {
-                    var securityKey = "kFAAT3.bFnMhvHYtCcEcyQZspBqNHQmKWEMt";
-                    
+                {                   
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         
@@ -46,10 +46,10 @@ namespace authService
                         ValidateAudience = true,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = "yourdomain.com",
-                        ValidAudience = "yourdomain.com",
+                        ValidIssuer = AppSettings.TokenGeneration.Issuer,
+                        ValidAudience = AppSettings.TokenGeneration.Audience,
                         IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(securityKey))
+                            Encoding.UTF8.GetBytes(AppSettings.TokenGeneration.SecurityKey))
                     };
                 });
         }

@@ -4,7 +4,7 @@ using MySql.Data.EntityFrameworkCore;
 
 namespace authService.Contexts
 {
-    public class AuthDbContext : DbContext
+    public class UsersDbContext : DbContext
     {
         public DbSet<Model.Db.User> Users { get; set; }
 

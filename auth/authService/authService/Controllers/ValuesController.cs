@@ -9,9 +9,9 @@ namespace authService.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        Contexts.AuthDbContext _context { get; }
+        Contexts.UsersDbContext _context { get; }
 
-        public ValuesController(Contexts.AuthDbContext context) {
+        public ValuesController(Contexts.UsersDbContext context) {
             _context = context;
         }
 

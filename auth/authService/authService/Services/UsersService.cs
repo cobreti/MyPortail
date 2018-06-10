@@ -5,11 +5,11 @@ namespace authService.Services
 {
     public class UsersService : IUsersService
     {
-        private Contexts.AuthDbContext _authContext { get; }
+        private Contexts.UsersDbContext UsersContext { get; }
         
-        public UsersService(Contexts.AuthDbContext authContext)
+        public UsersService(Contexts.UsersDbContext usersContext)
         {
-            _authContext = authContext;
+            UsersContext = usersContext;
         }
 
         public async Task<Model.Db.User> AddUser(Model.Api.User user)
@@ -23,7 +23,7 @@ namespace authService.Services
                     Id = Guid.NewGuid().ToString()
                 };
 
-                using (var ctx = _authContext)
+                using (var ctx = UsersContext)
                 {
                     ctx.Database.EnsureCreated();
                     ctx.Users.Add(dbUser);
