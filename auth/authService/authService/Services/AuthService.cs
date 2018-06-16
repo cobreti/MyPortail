@@ -4,6 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using authService.Exceptions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
@@ -41,7 +42,8 @@ namespace authService.Services
                 
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, credentials.Username)
+                    new Claim(ClaimTypes.Name, credentials.Username),
+                    new Claim("id", user.Id) 
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppSettings.TokenGeneration.SecurityKey));

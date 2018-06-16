@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,6 +24,9 @@ namespace authService.Controllers
         {
             try
             {
+                // test line to query claim data
+                var userId = HttpContext.User.Claims.First(x => x.Type == "id")?.Value;
+                
                 var dbUser = await UsersService.AddUser(user);
             }
             catch (Exception ex)

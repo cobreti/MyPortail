@@ -6,10 +6,14 @@ namespace authService.Services
     public class UsersService : IUsersService
     {
         private Contexts.UsersDbContext UsersContext { get; }
+        private IPasswordHasher PasswordHasher { get; }
         
-        public UsersService(Contexts.UsersDbContext usersContext)
+        public UsersService(
+            Contexts.UsersDbContext usersContext,
+            IPasswordHasher passwordHasher)
         {
             UsersContext = usersContext;
+            PasswordHasher = passwordHasher;
         }
 
         public async Task<Model.Db.User> AddUser(Model.Api.User user)
@@ -19,7 +23,7 @@ namespace authService.Services
                 var dbUser = new Model.Db.User
                 {
                     Name = user.Name,
-                    Password = user.Password,
+                    Password = PasswordHasher.HashPassword(user.Password),
                     Id = Guid.NewGuid().ToString()
                 };
 
