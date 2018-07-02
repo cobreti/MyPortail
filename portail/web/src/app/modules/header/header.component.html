@@ -1,0 +1,10 @@
+<div class="header-background" style="color: white">
+  {{currentPath}}
+  <div>
+    <ul>
+      <li><a [routerLink]="['', { outlets: { main: ['home'] }}]">home</a></li>
+      <li><a [routerLink]="['', { outlets: { main: ['login'] }}]">login</a></li>
+      <li><a [routerLink]="['', { outlets: { main: ['users'] }}]">users</a></li>
+    </ul>
+  </div>
+</div>
