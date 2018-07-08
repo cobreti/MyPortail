@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace authService.Controllers
 {
-    [Route("api/users")]
+    [Route("users")]
     public class UsersController : Controller
     {
         private Services.IUsersService UsersService { get; }

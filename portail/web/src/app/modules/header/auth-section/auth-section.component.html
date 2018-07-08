@@ -1,0 +1,3 @@
+<auth-user-login *ngIf="notAuthenticated"></auth-user-login>
+<span *ngIf="authenticating">authenticating</span>
+<auth-user *ngIf="authenticated" [user]="currentUser"></auth-user>

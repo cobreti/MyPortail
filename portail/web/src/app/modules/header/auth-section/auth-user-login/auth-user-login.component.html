@@ -1,0 +1,18 @@
+<form>
+  <input type="text"
+         placeholder="username"
+         autocomplete="username"
+         [(ngModel)]="username"
+         [ngModelOptions]="{standalone: true}"
+         class="username-input" />
+  <input type="password"
+         placeholder="password"
+         autocomplete="password"
+         [(ngModel)]="password"
+         [ngModelOptions]="{standalone: true}"
+         class="password-input" />
+  <button type="submit"
+          class="sign-in"
+          (click)="onSignIn()"
+          [class.disabled]="!canSignIn">sign in</button>
+</form>

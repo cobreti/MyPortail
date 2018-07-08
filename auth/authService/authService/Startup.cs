@@ -38,10 +38,9 @@ namespace authService
             services.AddSingleton<Settings.Application>(AppSettings);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
-                {                   
+                {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        
                         ValidateIssuer = true,
                         ValidateAudience = true,
                         ValidateLifetime = true,

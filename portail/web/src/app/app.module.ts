@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderModule } from './modules/header/header.module';
 import { appRoutes } from './app-routes';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     HeaderModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes, { enableTracing: false } )
   ],
   providers: [],
