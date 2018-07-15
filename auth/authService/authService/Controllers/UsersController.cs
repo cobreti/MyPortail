@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace authService.Controllers
 {
-    [Route("users")]
+    [Route("api/users")]
     public class UsersController : Controller
     {
         private Services.IUsersService UsersService { get; }
@@ -35,6 +35,22 @@ namespace authService.Controllers
             }
 
             return StatusCode(StatusCodes.Status200OK);
+        }
+
+        [Route("")]
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> ListUsers()
+        {
+            try
+            {
+                var users = await UsersService.listUsers();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest);
+            }
         }
     }
 }

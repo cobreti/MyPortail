@@ -54,7 +54,11 @@ class AuthService {
     };
     this._http.post<api.Login>(`/api/auth/login`, login, httpOptions)
       .subscribe((response) => {
+        this._authStatusObserver.next(AuthStatus.authenticated);
         console.log(response);
+      }, (error) => {
+        this._authStatusObserver.next(AuthStatus.notAuthenticated);
+        console.log(error);
       });
 
     // setTimeout( () => {
