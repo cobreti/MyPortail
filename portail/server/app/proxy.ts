@@ -14,19 +14,12 @@ export class Proxy {
         }
    }
 
-    public onPostRequet(url : string,
+    protected onPostRequet(url : string,
                         req : Request,
                         res : Response,
                         next : NextFunction) {
-        const headers : Headers = {
-            'Content-Type': req.headers['content-type'],
-            'accept': req.headers['accept'],
-            // 'origin': req.headers['origin'],
-            'authorization': req.headers['authorization']
-        };
-
         request.post({
-            headers,
+            headers: this.apiHeaderFromRequest(req),
             url: `${this._redirectRoute}${url}`,
             body: JSON.stringify(req.body)
         }, (error: any, response: any, body: any) => {
@@ -35,13 +28,13 @@ export class Proxy {
         });
     }
 
-    public onPutRequest(url : string,
+    protected onPutRequest(url : string,
                         req : Request,
                         res : Response,
                         next : NextFunction) {
 
         request.put({
-            headers: req.headers,
+            headers: this.apiHeaderFromRequest(req),
             url: `${this._redirectRoute}${url}`,
             body: JSON.stringify(req.body)
         }, (error: any, response: any, body: any) => {
@@ -50,20 +43,12 @@ export class Proxy {
         });
     }
 
-    public onGetRequest(url : string,
+    protected onGetRequest(url : string,
                         req : Request,
                         res : Response,
                         next : NextFunction) {
-
-        const headers : Headers = {
-            'Content-Type': req.headers['content-type'],
-            'accept': req.headers['accept'],
-            // 'origin': req.headers['origin'],
-            'authorization': req.headers['authorization']
-        };
-
         request.get({
-            headers,
+            headers: this.apiHeaderFromRequest(req),
             url: `${this._redirectRoute}${url}`,
             body: JSON.stringify(req.body)
         }, (error: any, response: any, body: any) => {
@@ -72,13 +57,13 @@ export class Proxy {
         });
     }
 
-    public onDeleteRequest(url : string,
+    protected onDeleteRequest(url : string,
                            req : Request,
                            res : Response,
                            next : NextFunction) {
 
         request.delete({
-            headers: req.headers,
+            headers: this.apiHeaderFromRequest(req),
             url: `${this._redirectRoute}${url}`,
             body: JSON.stringify(req.body)
         }, (error: any, response: any, body: any) => {
@@ -87,7 +72,17 @@ export class Proxy {
         });
     }
 
-    public handleRequest(req : Request,
+    protected apiHeaderFromRequest(req : Request) : Headers {
+        const headers : Headers = {
+            'Content-Type': req.headers['content-type'],
+            'accept': req.headers['accept'],
+            'authorization': req.headers['authorization']
+        };
+
+        return headers;
+    }
+
+    protected handleRequest(req : Request,
                          res : Response,
                          next : NextFunction) {
         const url : string = req.url.substring(this._route.length);
@@ -114,7 +109,7 @@ export class Proxy {
         }
     }
 
-    public match(url : string) : boolean {
+    protected match(url : string) : boolean {
         return url.startsWith(this._route);
     }
 
@@ -127,17 +122,4 @@ export class Proxy {
             }
         }
     }
-
-    // public static createProxy() : RequestHandler {
-    //     return (req, res, next) => {
-    //         const routeExp = /^\/api\/(\w*)\/(.*)$/;
-    //         const match = req.url.match(routeExp);
-    //
-    //         if (match && match.length == 3) {
-    //         }
-    //         else {
-    //             next();
-    //         }
-    //     };
-    // }
 }
