@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import {User} from "../models/User";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {api} from '../models/api/login';
+import * as decode from 'jwt-decode';
 
 import { environment } from './../../environments/environment';
 
@@ -13,6 +14,15 @@ enum AuthStatus {
   authenticating
 }
 
+
+interface TokenClaims {
+  id: string,
+  username: string
+}
+
+interface LoginResponse {
+  token: string
+}
 
 @Injectable({
   providedIn: 'root'
@@ -53,18 +63,19 @@ class AuthService {
       })
     };
     this._http.post<api.Login>(`/api/auth/login`, login, httpOptions)
-      .subscribe((response) => {
-        this._authStatusObserver.next(AuthStatus.authenticated);
-        console.log(response);
+      .subscribe((response: object) => {
+        const loginResponse = response as LoginResponse;
+        const claims = decode(loginResponse.token) as TokenClaims;
+        if (claims) {
+          this._currentUser = new User(claims.id, claims.username);
+          this._authStatusObserver.next(AuthStatus.authenticated);
+        } else {
+          this._authStatusObserver.next(AuthStatus.notAuthenticated);
+        }
       }, (error) => {
         this._authStatusObserver.next(AuthStatus.notAuthenticated);
         console.log(error);
       });
-
-    // setTimeout( () => {
-    //   this._currentUser = new User('', username);
-    //   this._authStatusObserver.next(AuthStatus.authenticated);
-    // }, 5000);
   }
 
   public signout() {

@@ -3,6 +3,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Model\private" />
     <Folder Include="wwwroot\" />
     <Folder Include="Contexts\" />
     <Folder Include="Settings\" />

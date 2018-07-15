@@ -14,6 +14,7 @@ export class AuthUserComponent implements OnInit {
   constructor(private _authService : AuthService) { }
 
   ngOnInit() {
+    this.user = this._authService.currentUser;
   }
 
   public onSignOut() {

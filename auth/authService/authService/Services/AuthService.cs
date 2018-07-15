@@ -42,8 +42,8 @@ namespace authService.Services
                 
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, credentials.Username),
-                    new Claim("id", user.Id) 
+                    new Claim("id", user.Id),
+                    new Claim("username", user.Name)
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppSettings.TokenGeneration.SecurityKey));
