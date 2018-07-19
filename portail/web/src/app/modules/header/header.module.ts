@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {TranslateModule} from '@ngx-translate/core';
+
 import { HeaderComponent } from './header.component';
 import { AuthSectionComponent } from './auth-section/auth-section.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -12,7 +14,8 @@ import { AuthUserComponent } from './auth-section/auth-user/auth-user.component'
     CommonModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ],
   declarations: [
     HeaderComponent,

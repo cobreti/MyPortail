@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { environment } from '../environments/environment';
+import {TranslateService} from "@ngx-translate/core";
 
 console.log(environment);
 
@@ -10,4 +11,9 @@ console.log(environment);
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 }

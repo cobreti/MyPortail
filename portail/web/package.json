@@ -20,6 +20,8 @@
     "@angular/platform-browser": "^6.0.7",
     "@angular/platform-browser-dynamic": "^6.0.7",
     "@angular/router": "^6.0.7",
+    "@ngx-translate/core": "^10.0.2",
+    "@ngx-translate/http-loader": "^3.0.1",
     "core-js": "^2.5.4",
     "jwt-decode": "github:auth0/jwt-decode",
     "rxjs": "^6.2.1",
