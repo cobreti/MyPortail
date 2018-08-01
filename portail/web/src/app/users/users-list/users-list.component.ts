@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../../services/users.service';
 import { User } from '../../models/User';
+import {api} from "../../models/api/User";
 
 @Component({
   selector: 'users-list',
@@ -18,7 +19,10 @@ export class UsersListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._users = this.usersService.queryUsers();
+    this.usersService.queryUsers()
+      .subscribe( (users: Array<api.User>) => {
+
+      });
   }
 
   public get users() : Array<User> {
