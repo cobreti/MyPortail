@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {AuthService, AuthStatus} from "../../../services/auth.service";
-import {User} from '../../../models/User';
+import {AuthService, AuthStatus} from "../../../app/services/auth.service";
+import {User} from '../../../app/models/User';
 
 @Component({
   selector: 'auth-section',

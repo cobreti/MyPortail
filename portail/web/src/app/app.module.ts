@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HeaderModule } from './modules/header/header.module';
+import { HeaderModule } from '../modules/header/header.module';
 import { appRoutes } from './app-routes';
 import {HttpClientModule, HttpClient, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
