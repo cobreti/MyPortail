@@ -6,7 +6,6 @@ import {api} from '../models/api/login';
 import * as decode from 'jwt-decode';
 
 import { environment } from './../../environments/environment';
-import {HttpService} from "./http.service";
 
 
 enum AuthStatus {
@@ -33,10 +32,10 @@ interface LoginResponse {
 class AuthService {
   private _authStatusObservable : Observable<AuthStatus>;
   private _authStatusObserver : any;
+  private _token : string;
   private _currentUser : User;
 
-  constructor(private _http : HttpClient,
-              private _httpService : HttpService ) {
+  constructor(private _http : HttpClient ) {
     this._authStatusObservable = new Observable((observer) => {
       this._authStatusObserver = observer;
       observer.next(AuthStatus.notAuthenticated);
@@ -49,6 +48,10 @@ class AuthService {
 
   public get currentUser() : User {
     return this._currentUser;
+  }
+
+  public get token() : string {
+    return this._token;
   }
 
   public authenticate(
@@ -64,11 +67,12 @@ class AuthService {
         'Content-Type':  'application/json'
       })
     };
-    this._httpService.post<api.Login>(`/api/auth/login`, login, null)
+    this._http.post<api.Login>(`/api/auth/login`, login, httpOptions)
       .subscribe((response: object) => {
         const loginResponse = response as LoginResponse;
         if (loginResponse.token) {
-          this._httpService.token = loginResponse.token;
+          // this._httpService.token = loginResponse.token;
+          this._token = loginResponse.token;
         }
         const claims = decode(loginResponse.token) as TokenClaims;
         if (claims) {

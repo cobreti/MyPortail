@@ -2,15 +2,13 @@ import { Injectable } from '@angular/core';
 import { api } from '../models/api/User';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {HttpService} from "./http.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
-  constructor(private _http : HttpClient,
-              private _httpService : HttpService) { }
+  constructor(private _http : HttpClient) { }
 
   queryUsers() : Observable<Array<api.User>> {
 
@@ -24,7 +22,7 @@ export class UsersService {
         'Content-Type':  'application/json'
       })
     };
-    this._httpService.get<Array<api.User>>(`/api/auth/users`, httpOptions)
+    this._http.get<Array<api.User>>(`/api/auth/users`, httpOptions)
       .subscribe( (response: object) => {
         console.log(response);
       }, (error) => {
