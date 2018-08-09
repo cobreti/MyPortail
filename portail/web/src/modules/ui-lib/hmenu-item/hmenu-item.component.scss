@@ -1,0 +1,10 @@
+.menu-item {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  text-shadow: 0 0 4px #FF7140;
+}

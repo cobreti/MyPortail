@@ -1,11 +1,21 @@
 <div class="header-background" style="color: white">
   <auth-section class="auth-section"></auth-section>
   {{currentPath}}
-  <div>
-    <ul>
-      <li><a [routerLink]="['', { outlets: { main: ['home'] }}]">home</a></li>
-      <li><a [routerLink]="['', { outlets: { main: ['login'] }}]">login</a></li>
-      <li><a [routerLink]="['', { outlets: { main: ['users'] }}]">users</a></li>
-    </ul>
-  </div>
+  <ui-hmenu #mainMenu
+             class="main-menu"
+             outlet="main">
+    <ui-hmenu title="Admin">
+      <ui-hmenu-item title="users"></ui-hmenu-item>
+    </ui-hmenu>
+    <ui-hmenu-item path="home" title="home"></ui-hmenu-item>
+    <ui-hmenu-item path="login" title="login"></ui-hmenu-item>
+    <ui-hmenu-item path="users" title="users"></ui-hmenu-item>
+  </ui-hmenu>
+  <!--<div>-->
+    <!--<ul>-->
+      <!--<li><a [routerLink]="['', { outlets: { main: ['home'] }}]">home</a></li>-->
+      <!--<li><a [routerLink]="['', { outlets: { main: ['login'] }}]">login</a></li>-->
+      <!--<li><a [routerLink]="['', { outlets: { main: ['users'] }}]">users</a></li>-->
+    <!--</ul>-->
+  <!--</div>-->
 </div>

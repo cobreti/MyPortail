@@ -1,0 +1,14 @@
+<div *ngIf="!parent">
+  <div class="bread-crumbs">
+    <span>Home</span>
+    <span class="bread-crumb-item" *ngFor="let menu of selectedMenus">{{menu.title}}</span>
+  </div>
+</div>
+
+<div class="menu-items">
+  <ng-content></ng-content>
+</div>
+
+<div class="menu-title" *ngIf="parent">
+  <span (click)="onTitleClicked()">{{title}}</span>
+</div>

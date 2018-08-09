@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {TranslateModule} from '@ngx-translate/core';
+import { UiLibModule } from '../ui-lib/ui-lib.module';
 
 import { HeaderComponent } from './header.component';
 import { AuthSectionComponent } from './auth-section/auth-section.component';
@@ -15,7 +16,8 @@ import { AuthUserComponent } from './auth-section/auth-user/auth-user.component'
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    TranslateModule
+    TranslateModule,
+    UiLibModule
   ],
   declarations: [
     HeaderComponent,

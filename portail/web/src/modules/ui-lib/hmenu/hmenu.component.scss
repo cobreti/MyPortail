@@ -1,0 +1,27 @@
+.bread-crumbs {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .bread-crumb-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.menu-items {
+  position: relative;
+  margin-top: 0.5rem;
+  left: 1rem;
+}
+
+.menu-title {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.menu-title:hover {
+  text-shadow: 0 0 4px #FF7140;
+}
